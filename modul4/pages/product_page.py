@@ -8,7 +8,7 @@ class ProductPage(BasePage):
     def add_product_to_basket(self):
         add_button = self.browser.find_element(*ProductPageLocators.ADD_TO_BASKET)
         add_button.click()
-        #self.solve_quiz_and_get_code()
+
 
     def should_be_success_message(self):
         assert self.is_element_present(*ProductPageLocators.SUCCESS_MESSAGE), "Success message is not presented"
@@ -32,3 +32,5 @@ class ProductPage(BasePage):
     def should_disappear_success_message(self):
         assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
             "Success message is presented, but no disappear"
+
+
