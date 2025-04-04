@@ -15,3 +15,13 @@ class ProductPageLocators():
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, "div.alertinner")
     MESSAGE_PRODUCT_NAME = (By.CSS_SELECTOR, "div.alertinner strong")
     BASKET_TOTAL = (By.CSS_SELECTOR, "div.alert-info p strong")
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    BASKET_BUTTON = (By.CSS_SELECTOR, "span.btn-group a.btn-default")
+
+class BasketPageLocators():
+    BASKET_ITEMS = (By.CSS_SELECTOR, "div.basket-title.hidden-xs")
+    BASKET_EMPTY = (By.CSS_SELECTOR, "div#content_inner p")
+
